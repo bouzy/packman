@@ -71,7 +71,7 @@ def command_selector():
 		help()
 
 if __name__ == "__main__":
-	title = "UCAM"
+	title = "UCAM" #Ubuntu ? Application Manager
 	version = "0.1"
 	updating = "\n\n------------\n- UPDATING -\n------------"
 	removing = "\n\n------------\n- REMOVING -\n------------"
