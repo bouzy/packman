@@ -89,7 +89,7 @@ if __name__ == "__main__":
     full_year = "%Y"
     log_date = strftime(month + "/" + day + "/" + full_year + "-" + full_time)
     app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
-    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "git", "python-pip", "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla", "vlc"]
+    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "octave", "git", "python-pip", "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla", "vlc"]
     '''app_remove_list_open = open("app_remove.txt", "r")
     app_remove_list_reader = app_remove_list_open.readlines()
     for tester in app_remove_list_reader:
