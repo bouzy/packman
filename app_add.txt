@@ -1,0 +1,16 @@
+gcc
+g++
+make
+vim
+terminator
+git
+python-pip
+dconf-tools
+htop
+p7zip-full
+psensor
+wget
+curl
+nmap
+filezilla
+vlc

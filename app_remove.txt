@@ -1,0 +1,11 @@
+libreoffice-core
+libreoffice-common
+account-plugin
+totem
+totem-common
+unity-scopes-runner
+unity-scope-video-remote
+unity-lense-files
+unity-lens-photos
+unity-lens-music
+unity-lens-video
