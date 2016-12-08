@@ -12,5 +12,6 @@ psensor
 wget
 curl
 nmap
+zenmap
 filezilla
 vlc

@@ -81,14 +81,20 @@ if __name__ == "__main__":
     to_be_removed = "\n\n-----------------\n- TO BE REMOVED -\n-----------------"
     to_be_added = "\n\n---------------\n- TO BE ADDED -\n---------------"
     log_file = "log_file.log"
+    #log_file = "test_log_file.log"
     full_time = "%X"
     month = "%m"
     day = "%d"
     full_day = "%A"
     full_year = "%Y"
     log_date = strftime(month + "/" + day + "/" + full_year + "-" + full_time)
-    app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin*", "totem", "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
-    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "git", "python-pip", "dconf-tools", "htop", "p7zip-full", "sublime-text", "psensor", "wget", "curl", "nmap", "ipscan", "filezilla", "vlc"]
+    app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
+    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "git", "python-pip", "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla", "vlc"]
+    '''app_remove_list_open = open("app_remove.txt", "r")
+    app_remove_list_reader = app_remove_list_open.readlines()
+    for tester in app_remove_list_reader:
+        app_remove_list.append(tester)
+    app_remove_list_open.close()'''
     app_remove_list_amount = 0
     for list_count_zero in app_remove_list:
         app_remove_list_amount += 1
@@ -96,13 +102,13 @@ if __name__ == "__main__":
     for list_count_one in app_add_list:
         app_add_list_amount += 1
     def file_space_validate():
-        log_file_content_validator = open("log_file.log", "r")
+        log_file_content_validator = open(log_file, "r")
 	log_file_content_validator_reader = log_file_content_validator.read()
 	if log_file_content_validator_reader == "":
             log_file_content_validator.close()
 	else:
             log_file_content_validator.close()
-	    log_file_space_adder = open("log_file.log", "a")
+	    log_file_space_adder = open(log_file, "a")
 	    log_file_space_adder.write("\n")
 	    log_file_space_adder.close()
     print title, version

@@ -5,7 +5,7 @@ totem
 totem-common
 unity-scopes-runner
 unity-scope-video-remote
-unity-lense-files
+unity-lens-files
 unity-lens-photos
 unity-lens-music
 unity-lens-video
