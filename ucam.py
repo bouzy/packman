@@ -50,8 +50,12 @@ def app_add_list_terminal():
 	add_list_counter_string = "[" + str(add_list_counter) + "/" + str(app_add_list_amount) + "]"
 	print str(add_list + add_list_counter_string)
 
+def notes():
+    print readme + 'The virtualbox extension pack "virtualbox-ext-pack" must be installed manually'
+
 def help():
     print "\n\nCOMMAND     DESCRIPTON"
+    print "     -h     Displays the list of commands"
     print "     -r     Removes the listed applictions."
     print "     -a     Adds the listed applications."
     print "    -rl     Lists the applications to be removed."
@@ -80,6 +84,7 @@ if __name__ == "__main__":
     cleaning_up = "\n\n---------------\n- CLEANING UP -\n---------------"
     to_be_removed = "\n\n-----------------\n- TO BE REMOVED -\n-----------------"
     to_be_added = "\n\n---------------\n- TO BE ADDED -\n---------------"
+    readme = "\n\n---------\n- NOTES -\n---------\n"
     log_file = "log_file.log"
     #log_file = "test_log_file.log"
     full_time = "%X"
@@ -88,13 +93,12 @@ if __name__ == "__main__":
     full_day = "%A"
     full_year = "%Y"
     log_date = strftime(month + "/" + day + "/" + full_year + "-" + full_time)
-    app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
-    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "octave", "git", "python-pip", "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla", "vlc"]
-    '''app_remove_list_open = open("app_remove.txt", "r")
-    app_remove_list_reader = app_remove_list_open.readlines()
-    for tester in app_remove_list_reader:
-        app_remove_list.append(tester)
-    app_remove_list_open.close()'''
+    app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", 
+    "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", 
+    "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
+    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "octave", "git", "python-pip", 
+    "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla", 
+    "virtualbox", "vlc"]
     app_remove_list_amount = 0
     for list_count_zero in app_remove_list:
         app_remove_list_amount += 1
@@ -113,3 +117,5 @@ if __name__ == "__main__":
 	    log_file_space_adder.close()
     print title, version
     command_selector()
+    notes()
+
