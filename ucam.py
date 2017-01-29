@@ -51,7 +51,7 @@ def app_add_list_terminal():
 	print str(add_list + add_list_counter_string)
 
 def notes():
-    print readme + 'The virtualbox extension pack "virtualbox-ext-pack" must be installed manually'
+    print readme + 'The virtualbox application "virtualbox" and virtualbox extension pack "virtualbox-ext-pack" must be installed manually'
 
 def help():
     print "\n\nCOMMAND     DESCRIPTON"
@@ -76,7 +76,7 @@ def command_selector():
         help()
 
 if __name__ == "__main__":
-    title = "UCAM" #Ubuntu Custom application Manager
+    title = "UCAM" #Ubuntu Custom Application Manager
     version = "0.1"
     updating = "\n\n------------\n- UPDATING -\n------------"
     removing = "\n\n------------\n- REMOVING -\n------------"
@@ -96,9 +96,8 @@ if __name__ == "__main__":
     app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", 
     "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", 
     "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
-    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "octave", "git", "python-pip", 
-    "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla", 
-    "virtualbox", "vlc"]
+    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "octave", "git", "python-pip",
+    "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla","vlc"]
     app_remove_list_amount = 0
     for list_count_zero in app_remove_list:
         app_remove_list_amount += 1
