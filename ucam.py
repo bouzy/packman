@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+#import csv
 from os import system as sys
 from sys import argv
 from time import strftime
@@ -12,7 +13,7 @@ def app_remove():
     for remove in app_remove_list:
         remove_counter += 1
 	remove_counter_string = "[" + str(remove_counter) + "/" + str(app_remove_list_amount) + "]"
-	print str(remove + remove_counter_string)
+	print str(remove_counter_string + " " + remove)
 	sys("sudo apt-get -y remove " + remove + " >> " + log_file)
     print cleaning_up
     print "Removing unused dependencies"
@@ -29,7 +30,7 @@ def app_add():
     for add in app_add_list:
         add_counter += 1
         add_counter_string = "[" + str(add_counter) + "/" + str(app_add_list_amount) + "]"
-	print str(add + add_counter_string)
+	print str(add_counter_string + " " + add)
 	sys("sudo apt-get -y install " + add + " >> " + log_file)
     print updating
     sys("sudo apt-get update")
@@ -50,25 +51,21 @@ def app_add_list_terminal():
 	add_list_counter_string = "[" + str(add_list_counter) + "/" + str(app_add_list_amount) + "]"
 	print str(add_list + add_list_counter_string)
 
-def notes():
-    print readme + 'The virtualbox application "virtualbox" and virtualbox extension pack "virtualbox-ext-pack" must be installed manually'
-
 def help():
     print "\n\nCOMMAND     DESCRIPTON"
-    print "     -h     Displays the list of commands"
-    print "     -r     Removes the listed applictions."
-    print "     -a     Adds the listed applications."
-    print "    -rl     Lists the applications to be removed."
-    print "    -al     Lists the applications to be added."
+    print "    -rm     Removes the listed applictions."
+    print "    -in     Installs the listed applications."
+    print "    -lrm    Lists the applications to be removed."
+    print "    -lin    Lists the applications to be installed."
 
 def command_selector():
-    if "-r" in argv:
+    if "-rm" in argv:
         app_remove()
-    elif "-a" in argv:
+    elif "-in" in argv:
         app_add()
-    elif "-rl" in argv:
+    elif "-lrm" in argv:
         app_remove_list_terminal()
-    elif "-al" in argv:
+    elif "-lin" in argv:
         app_add_list_terminal()
     elif "-h" in argv:
         help()
@@ -76,28 +73,31 @@ def command_selector():
         help()
 
 if __name__ == "__main__":
-    title = "UCAM" #Ubuntu Custom Application Manager
-    version = "0.1"
+    title = "UCAM" #Ubuntu Custom application Manager
+    version = "0.9"
     updating = "\n\n------------\n- UPDATING -\n------------"
     removing = "\n\n------------\n- REMOVING -\n------------"
     adding = "\n\n----------\n- ADDING - \n----------"
     cleaning_up = "\n\n---------------\n- CLEANING UP -\n---------------"
     to_be_removed = "\n\n-----------------\n- TO BE REMOVED -\n-----------------"
-    to_be_added = "\n\n---------------\n- TO BE ADDED -\n---------------"
-    readme = "\n\n---------\n- NOTES -\n---------\n"
+    to_be_added = "\n\n-------------------\n- TO BE INSTALLED -\n-------------------"
     log_file = "log_file.log"
-    #log_file = "test_log_file.log"
     full_time = "%X"
     month = "%m"
     day = "%d"
     full_day = "%A"
     full_year = "%Y"
     log_date = strftime(month + "/" + day + "/" + full_year + "-" + full_time)
-    app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", 
-    "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", 
-    "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
-    app_add_list = ["gcc", "g++", "make", "vim", "terminator", "octave", "git", "python-pip",
-    "dconf-tools", "htop", "p7zip-full", "psensor", "wget", "curl", "nmap", "zenmap", "filezilla","vlc"]
+    app_remove_list = ["libreoffice-core", "libreoffice-common", "account-plugin", "totem", "totem-common", "unity-scopes-runner", "unity-scope-video-remote", "unity-lens-files", "unity-lens-photos", "unity-lens-music", "unity-lens-video"]
+    app_add_list = ["gcc", "g++", "make", "vim", "git", "python-pip", "htop", "p7zip-full", "wget", "curl", "traceroute", "nmap", "vlc"]
+    #################################################################################################
+    #with open('applications.csv') as csvfile:
+    #    reader = csv.DictReader(csvfile)
+    #    for row in reader:
+    #        if row['STATUS'] == 'remove':
+    #            print('\033[1m{:10s}\033[0m'.format(row['APPLICATION'])), " - ", row['DESCRIPTION']
+    #            print row['APPLICATION'], " - ", row['DESCRIPTION']
+    #################################################################################################
     app_remove_list_amount = 0
     for list_count_zero in app_remove_list:
         app_remove_list_amount += 1
@@ -110,11 +110,9 @@ if __name__ == "__main__":
 	if log_file_content_validator_reader == "":
             log_file_content_validator.close()
 	else:
-            log_file_content_validator.close()
+	    log_file_content_validator.close()
 	    log_file_space_adder = open(log_file, "a")
 	    log_file_space_adder.write("\n")
 	    log_file_space_adder.close()
     print title, version
     command_selector()
-    notes()
-
