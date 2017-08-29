@@ -4,7 +4,7 @@ from os import system as sys
 from sys import argv
 from time import strftime
 
-title = 'PACKMAN' #Ubuntu Custom application Manager
+title = 'PACKMAN'
 version = '1.0'
 updating = '------------\n- UPDATING -\n------------'
 removing = '------------\n- REMOVING -\n------------'
