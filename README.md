@@ -1,6 +1,6 @@
 # PACKMAN
 
-PACKMAN is an script that allows you to uninstall and install packages in batch.
+PACKMAN is a script that allows you to uninstall and install packages in batch.
 
 ## Requirements
 - Ubuntu 16.04 LTS +
