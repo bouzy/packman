@@ -4,7 +4,7 @@
 
 **PACKMAN** is a script that allows you to uninstall and install packages in batch.
 
-## Requirements
+## System Requirements
 - Ubuntu 16.04 LTS +
 - Python 3.5
 
