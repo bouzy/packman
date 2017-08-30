@@ -10,9 +10,12 @@
 
 ## Getting Started
 Run the python file `packman.py` followed by an option.
+</br>
+This example uses option h.
 ```bash
 $ sudo python packman.py h
 ```
+Output
 ```
 PACKMAN 1.0
 
