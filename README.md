@@ -9,7 +9,7 @@
 - Python 3.5
 
 ## Getting Started
-```shell
+```bash
 $ sudo python packman.py h
 ```
 ```
