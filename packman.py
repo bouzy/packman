@@ -20,10 +20,7 @@ full_day = '%A'
 full_year = '%Y'
 log_date = strftime(month + '/' + day + '/' + full_year + '-' + full_time)
 
-app_remove_list = (['libreoffice-core',
-    'libreoffice-common',
-    'account-plugin',
-    'totem',
+app_remove_list = (['totem',
     'totem-common',
     'unity-scopes-runner',
     'unity-scope-video-remote',
@@ -112,7 +109,7 @@ def app_add_list_terminal():
         print(str(add_list_counter_string + ' ' + add_list))
 
 def help():
-    options_dictionary = (['h - help menu',
+    options_dictionary = (['h - help',
         'rm - removes the selected packages',
         'in - installs the selected packages',
         'lrm - lists the selected packages to be removed',
