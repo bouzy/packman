@@ -36,6 +36,7 @@ app_remove_list = (['libreoffice-core',
     'unity-lens-photos',
     'unity-lens-music',
     'unity-lens-video'])
+
 app_add_list = (['gcc',
     'g++',
     'make',
