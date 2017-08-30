@@ -8,7 +8,7 @@
 - Ubuntu 16.04 LTS +
 - Python 3.5
 
-## How-To
+## Getting Started
 ```shell
 $ sudo python packman.py h
 ```
