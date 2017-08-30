@@ -51,5 +51,3 @@ app_add_list = (['gcc',
     'nmap',
     'vlc'])
 ```
-
-## License
