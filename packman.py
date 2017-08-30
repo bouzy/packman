@@ -19,6 +19,7 @@ day = '%d'
 full_day = '%A'
 full_year = '%Y'
 log_date = strftime(month + '/' + day + '/' + full_year + '-' + full_time)
+
 app_remove_list = (['libreoffice-core',
     'libreoffice-common',
     'account-plugin',
@@ -30,6 +31,7 @@ app_remove_list = (['libreoffice-core',
     'unity-lens-photos',
     'unity-lens-music',
     'unity-lens-video'])
+
 app_add_list = (['gcc',
     'g++',
     'make',
@@ -42,6 +44,7 @@ app_add_list = (['gcc',
     'traceroute',
     'nmap',
     'vlc'])
+
 app_remove_list_amount = 0
 app_add_list_amount = 0
 
@@ -108,11 +111,11 @@ def app_add_list_terminal():
         print(str(add_list_counter_string + ' ' + add_list))
 
 def help():
-    options_dictionary = (['rm - removes the selected packages',
+    options_dictionary = (['h - help menu',
+        'rm - removes the selected packages',
         'in - installs the selected packages',
         'lrm - lists the selected packages to be removed',
-        'lin - lists the selected packages to be installed',
-        'h - help menu'])
+        'lin - lists the selected packages to be installed'])
     print(title + ' ' + version + '\n')
     print('USAGE: sudo python packman.py [option]\n\nOPTIONS:')
     for print_options_dictionary in options_dictionary:
