@@ -24,5 +24,29 @@ OPTIONS:
   lrm - lists the selected packages to be removed
   lin - lists the selected packages to be installed
 ```
+.. code-block:: python
+app_remove_list = (['libreoffice-core',
+    'libreoffice-common',
+    'account-plugin',
+    'totem',
+    'totem-common',
+    'unity-scopes-runner',
+    'unity-scope-video-remote',
+    'unity-lens-files',
+    'unity-lens-photos',
+    'unity-lens-music',
+    'unity-lens-video'])
+app_add_list = (['gcc',
+    'g++',
+    'make',
+    'vim',
+    'git',
+    'python-pip',
+    'htop',
+    'p7zip-full',
+    'wget', 'curl',
+    'traceroute',
+    'nmap',
+    'vlc'])
 
 ## License
