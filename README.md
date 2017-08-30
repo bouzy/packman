@@ -20,7 +20,7 @@ PACKMAN 1.0
 USAGE: sudo python packman.py [option]
 
 OPTIONS:
-  h - help menu
+  h - help
   rm - removes the selected packages
   in - installs the selected packages
   lrm - lists the selected packages to be removed
