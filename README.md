@@ -9,8 +9,8 @@
 - Python 3.5
 
 ## How-To
-<div style="background-color:#92cd00">
-test
-</div>
+```shell
+$ python
+```
 
 ## License
