@@ -2,7 +2,7 @@
   <img src="logo.png"><br><br>
 </div>
 
-**PACKMAN** is a script that allows you to uninstall and install packages in batch.
+**PACKMAN** removes and intalls selected packages in batch.
 
 ## System Requirements
 - Ubuntu 16.04 LTS +
@@ -18,11 +18,11 @@ PACKMAN 1.0
 USAGE: sudo python packman.py [option]
 
 OPTIONS:
+  h - help menu
   rm - removes the selected packages
   in - installs the selected packages
   lrm - lists the selected packages to be removed
   lin - lists the selected packages to be installed
-  h - help menu
 ```
 
 ## License
