@@ -9,7 +9,7 @@
 - Python 3.5
 
 ## How-To
-<div bgcolor="red">
+<div style="background-color:#92cd00">
 test
 </div>
 
