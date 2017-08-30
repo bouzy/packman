@@ -28,10 +28,7 @@ OPTIONS:
 ```
 The lists of packages to be removed and installed are located in the variables `app_remove_list` and `app_add_list`.
 ```python
-app_remove_list = (['libreoffice-core',
-    'libreoffice-common',
-    'account-plugin',
-    'totem',
+app_remove_list = (['totem',
     'totem-common',
     'unity-scopes-runner',
     'unity-scope-video-remote',
