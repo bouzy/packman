@@ -2,7 +2,7 @@
   <img src="logo.png"><br><br>
 </div>
 
-**PACKMAN** removes and intalls selected packages in batch.
+**PACKMAN** removes and installs selected packages in batch.
 
 ## System Requirements
 - Ubuntu 16.04 LTS +
@@ -24,6 +24,7 @@ OPTIONS:
   lrm - lists the selected packages to be removed
   lin - lists the selected packages to be installed
 ```
+The lists of packages to be removed and installed are located in the variables app_remove_list and app_add_list
 ```python
 app_remove_list = (['libreoffice-core',
     'libreoffice-common',
