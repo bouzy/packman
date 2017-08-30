@@ -4,7 +4,7 @@
 
 **PACKMAN** removes and installs selected packages in batch.
 
-## System Requirements
+## Requirements
 - Ubuntu 16.04 LTS +
 - Python 3.5
 
