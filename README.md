@@ -8,12 +8,9 @@
 - Ubuntu 16.04 LTS +
 - Python 3.5
 
-<style>
-#how-to{background-color: #CCEEFF;}
-</style>
-
-<div id="how-to">
-HOW-TO</br></br>HOW-TO
+## How-To
+<div bgcolor="red">
+test
 </div>
 
 ## License
