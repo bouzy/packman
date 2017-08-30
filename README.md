@@ -24,7 +24,7 @@ OPTIONS:
   lrm - lists the selected packages to be removed
   lin - lists the selected packages to be installed
 ```
-.. code-block:: python
+```python
 app_remove_list = (['libreoffice-core',
     'libreoffice-common',
     'account-plugin',
@@ -48,5 +48,6 @@ app_add_list = (['gcc',
     'traceroute',
     'nmap',
     'vlc'])
+```
 
 ## License
