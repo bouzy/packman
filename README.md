@@ -12,5 +12,17 @@
 ```shell
 $ sudo python packman.py h
 ```
+```
+PACKMAN 1.0
+
+USAGE: sudo python packman.py [option]
+
+OPTIONS:
+  rm - removes the selected packages
+  in - installs the selected packages
+  lrm - lists the selected packages to be removed
+  lin - lists the selected packages to be installed
+  h - help menu
+```
 
 ## License
