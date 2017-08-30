@@ -10,7 +10,7 @@
 
 ## How-To
 ```shell
-$ python
+$ sudo python packman.py h
 ```
 
 ## License
