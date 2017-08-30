@@ -9,7 +9,7 @@
 - Python 3.5
 
 ## Getting Started
-Run the python file `packman.py` followed by an option. The following command uses the option `h`.
+Run the python file `packman.py` followed by an `option`. The following command uses the option `h`.
 ```bash
 $ sudo python packman.py h
 ```
