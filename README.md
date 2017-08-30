@@ -10,6 +10,7 @@
 
 ## Getting Started
 Run the python file `packman.py` followed by an option.
+</br>
 NOTE : the file `pacman.py` must be run as `sudo`.
 ```bash
 $ sudo python packman.py h
