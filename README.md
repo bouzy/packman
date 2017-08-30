@@ -10,7 +10,7 @@
 
 ## Getting Started
 ```shell
-~$ sudo python packman.py h
+$ sudo python packman.py h
 ```
 
 ## License
