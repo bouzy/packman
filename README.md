@@ -2,20 +2,20 @@
   <img src="logo.png"><br><br>
 </div>
 
-**PACKMAN** removes and installs selected packages in batch.
+**PACKMAN** removes and installs a list of packages in batch.
 
 ## Requirements
-- Ubuntu 16.04 LTS +
-- Python 3.5
+- Ubuntu or Debian
+- Python 3.6
 
 ## Getting Started
 Run the python file `packman.py` followed by an `option`. The following command uses the option `h`.
 ```bash
-$ sudo python packman.py h
+$ sudo python3 packman.py h
 ```
 Output
 ```
-PACKMAN 1.0
+PACKMAN 1.0.1
 
 USAGE: sudo python packman.py [option]
 
@@ -28,26 +28,7 @@ OPTIONS:
 ```
 The lists of packages to be removed and installed are located in the variables `app_remove_list` and `app_add_list`.
 ```python
-app_remove_list = (['totem',
-    'totem-common',
-    'unity-scopes-runner',
-    'unity-scope-video-remote',
-    'unity-lens-files',
-    'unity-lens-photos',
-    'unity-lens-music',
-    'unity-lens-video'])
+app_remove_list = ([''])
 
-app_add_list = (['gcc',
-    'g++',
-    'make',
-    'vim',
-    'git',
-    'python-pip',
-    'htop',
-    'p7zip-full',
-    'wget',
-    'curl',
-    'traceroute',
-    'nmap',
-    'vlc'])
+app_add_list = ([''])
 ```
