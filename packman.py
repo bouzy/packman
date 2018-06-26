@@ -1,11 +1,11 @@
-#!/usr/bin/python3.5
+#!/usr/bin/python3.6
 
 from os import system as sys
 from sys import argv
 from time import strftime
 
 title = 'PACKMAN'
-version = '1.0'
+version = '1.0.1'
 updating = '------------\n- UPDATING -\n------------'
 removing = '------------\n- REMOVING -\n------------'
 adding = '--------------\n- INSTALLING - \n--------------'
@@ -20,28 +20,9 @@ full_day = '%A'
 full_year = '%Y'
 log_date = strftime(month + '/' + day + '/' + full_year + '-' + full_time)
 
-app_remove_list = (['totem',
-    'totem-common',
-    'unity-scopes-runner',
-    'unity-scope-video-remote',
-    'unity-lens-files',
-    'unity-lens-photos',
-    'unity-lens-music',
-    'unity-lens-video'])
+app_remove_list = ([''])
 
-app_add_list = (['gcc',
-    'g++',
-    'make',
-    'vim',
-    'git',
-    'python-pip',
-    'htop',
-    'p7zip-full',
-    'wget',
-    'curl',
-    'traceroute',
-    'nmap',
-    'vlc'])
+app_add_list = ([''])
 
 app_remove_list_amount = 0
 app_add_list_amount = 0
