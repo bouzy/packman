@@ -2,7 +2,7 @@
   <img src="logo.png"><br><br>
 </div>
 
-**PACKMAN** removes and installs selected packages in batch.
+**PACKMAN** removes and installs a list of packages in batch.
 
 ## Requirements
 - Ubuntu or Debian
