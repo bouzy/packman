@@ -5,7 +5,7 @@ from sys import argv
 from time import strftime
 
 title = 'PACKMAN'
-version = '1.0.1'
+version = '1.1'
 updating = '------------\n- UPDATING -\n------------'
 removing = '------------\n- REMOVING -\n------------'
 adding = '--------------\n- INSTALLING - \n--------------'
