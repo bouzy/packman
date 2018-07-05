@@ -15,7 +15,7 @@ $ sudo python3 packman.py h
 ```
 Output
 ```
-PACKMAN 1.0.1
+PACKMAN 1.1
 
 USAGE: sudo python packman.py [option]
 
