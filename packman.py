@@ -20,9 +20,28 @@ full_day = '%A'
 full_year = '%Y'
 log_date = strftime(month + '/' + day + '/' + full_year + '-' + full_time)
 
-app_remove_list = ([''])
+app_remove_list = (['gnome-online-accounts'])
 
-app_add_list = ([''])
+app_add_list = (['gcc',
+    'g++',
+    'make',
+    'vim',
+    'git',
+    'python-pip',
+    'python3-pip',
+    'pylint',
+    'pylint3',
+    'python-bs4',
+    'python3-bs4',
+    'htop',
+    'glances',
+    'p7zip-full',
+    'wget',
+    'curl',
+    'traceroute',
+    'nmap',
+    'zenmap',
+    'vlc'])
 
 app_remove_list_amount = 0
 app_add_list_amount = 0
