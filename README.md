@@ -11,7 +11,7 @@
 ## Getting Started
 Run the python file `packman.py` followed by an `option`. The following command uses the option `h`.
 ```bash
-$ sudo python3 packman.py h
+$ sudo ./packman.py h
 ```
 Output
 ```
