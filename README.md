@@ -17,7 +17,7 @@ Output
 ```
 PACKMAN 1.1
 
-USAGE: sudo python packman.py [option]
+USAGE: sudo ./packman.py [option]
 
 OPTIONS:
   h - help
