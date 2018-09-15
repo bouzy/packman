@@ -4,8 +4,10 @@
 
 **PACKMAN** removes and installs a list of packages in batch.
 
+## Supported OS
+- Ubuntu
+
 ## Requirements
-- Ubuntu or Debian
 - Python 3.6
 
 ## Getting Started
