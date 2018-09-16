@@ -29,8 +29,3 @@ OPTIONS:
   lin - lists the selected packages to be installed
 ```
 The lists of packages to be removed and installed are located in the variables `app_remove_list` and `app_add_list`.
-```python
-app_remove_list = ([''])
-
-app_add_list = ([''])
-```
