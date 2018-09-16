@@ -1,2 +1,8 @@
+# VIM files
 *.swp
+*.swo
+*.vimrc
+*~
+
+# Python scripts
 *.pyc
