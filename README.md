@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="packman-logo.png"><br><br>
+  <img src="packman_logo.png"><br><br>
 </div>
 
 **PACKMAN** removes and installs a list of packages in batch.
